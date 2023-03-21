@@ -851,7 +851,6 @@ Keep your response to a few sentences."""
         vote = result["choices"][0]["text"].strip()
 
         if " " in vote:
-            print(vote)
             vote = vote.split(" ")[0]
         if target.lower() in vote.lower():
             vote = target
